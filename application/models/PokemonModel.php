@@ -4,7 +4,7 @@
 class PokemonModel extends CI_Model {
 	public function add($name, $superpower){
 		$status = $this->db->insert(
-			"pokemon",
+			"pokemons",
 			[
 				'name' => $name,
 				'superpower'  => $superpower,
